@@ -15,6 +15,12 @@ class Article
         $this->publishDate = $publishDate;
     }
 
+    public function displayDetails() {
+        echo "Title: {$this->title}\n";
+        echo "Description: {$this->description}\n";
+        echo "Publish Date: {$this->publish_date}\n";
+    }
+    
     public function formatPublishDate($format = 'DD-MM-YYYY')
     {
         // TODO: return the date in the required format
